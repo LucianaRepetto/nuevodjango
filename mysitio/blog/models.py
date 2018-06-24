@@ -12,7 +12,7 @@ class Post(models.Model):
 #models.Model significa que Post es un modelo de django asique
 # debe guardarlo en una Base de Datos    
 
-    def publicar(self):#es el metodo para publicar en el blog def(funcion)
+    def publish(self):#es el metodo para publicar en el blog def(funcion)
         self.published_date = timezone.now()
         self.save()
 
